@@ -1,0 +1,28 @@
+server:
+  port: 8190
+
+spring:
+  application:
+    name: movie-flix-management-user-service
+  flyway:
+    schemas: user_management
+    locations: classpath:db/migration
+  jpa:
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.PostgreSQLDialect
+        show_sql: true
+        format_sql: true
+        use_sql_comments: true
+    open-in-view: false
+  datasource:
+    url: jdbc:postgresql://localhost:5432/movie-flix
+    username: test
+    password: test
+  threads:
+    virtual:
+      enabled: true
+gmail:
+  username: ${GOOGLE_USERNAME}
+  password: ${GOOGLE_PASSWORD}
+
