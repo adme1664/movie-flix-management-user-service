@@ -12,8 +12,6 @@ public class EmailConfiguration {
 
   /**
    * Configures the JavaMailSender bean for sending emails.
-   *
-   * @return A configured JavaMailSender instance.
    */
   @Value("${com.adme.learning.mail.host}")
   private String host;

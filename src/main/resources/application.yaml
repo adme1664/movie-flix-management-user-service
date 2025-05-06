@@ -10,7 +10,6 @@ spring:
   jpa:
     properties:
       hibernate:
-        dialect: org.hibernate.dialect.PostgreSQLDialect
         show_sql: true
         format_sql: true
         use_sql_comments: true
@@ -26,7 +25,7 @@ com:
   adme:
     learning:
       mail:
-        username: ${EMAIL_USERNAME}
+        username: ${EMAIL_ACCOUNT}
         password: ${EMAIL_PASSWORD}
         host: ${EMAIL_SMTP_HOST}
         port: ${EMAIL_PORT}

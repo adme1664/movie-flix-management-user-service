@@ -16,7 +16,7 @@ public interface UserMapper {
   @Mapping(source = "email", target = "email")
   @Mapping(source = "joinDate", target = "joinDate")
   @Mapping(source = "lastLogin", target = "lastLogin")
-  @Mapping(source = "isActive", target = "isActive")
+  @Mapping(source = "active", target = "isActive")
   UserDomain toUserDomain(UserInfo userInfo);
 
   //UserDomain to UserInfo
@@ -26,6 +26,6 @@ public interface UserMapper {
   @Mapping(source = "email", target = "email")
   @Mapping(source = "joinDate", target = "joinDate")
   @Mapping(source = "lastLogin", target = "lastLogin")
-  @Mapping(source = "isActive", target = "isActive")
+  @Mapping(source = "isActive", target = "active")
   UserInfo toUserInfo(UserDomain userDomain);
 }

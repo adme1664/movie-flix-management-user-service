@@ -37,7 +37,7 @@ public class UserInfo extends BaseEntity {
   LocalDateTime lastLogin;
 
   @Column(name = "is_active", nullable = false)
-  private Boolean isActive;
+  private Boolean active;
 
   public BigInteger getUserId() {
     return userId;
@@ -88,12 +88,13 @@ public class UserInfo extends BaseEntity {
   }
 
   public Boolean getActive() {
-    return isActive;
+    return active;
   }
 
   public void setActive(Boolean active) {
-    isActive = active;
+    this.active = active;
   }
+
 
   private static class Builder {
 
