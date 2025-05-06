@@ -22,7 +22,12 @@ spring:
   threads:
     virtual:
       enabled: true
-gmail:
-  username: ${GOOGLE_USERNAME}
-  password: ${GOOGLE_PASSWORD}
+com:
+  adme:
+    learning:
+      mail:
+        username: ${EMAIL_USERNAME}
+        password: ${EMAIL_PASSWORD}
+        host: ${EMAIL_SMTP_HOST}
+        port: ${EMAIL_PORT}
 
